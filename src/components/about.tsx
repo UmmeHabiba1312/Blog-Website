@@ -36,7 +36,7 @@ export default function AboutSec() {
                 </h5>
                
                 <p className="dark:text-[#f2f2f4] mt-4 md:mt-6 text-xs md:text-sm lg:text-base  text-justify md:text-left py-2">
-                Hi! I'm <span className="text-cyan-500 font-semibold">Umm e Habiba</span>, a passionate full-stack developer with a deep love for building scalable, beautiful websites and web applications. My journey into tech started with a curiosity about how the web works and has since evolved into a full-fledged career.
+               {` Hi! I'm `}<span className="text-cyan-500 font-semibold">Umm e Habiba</span>, a passionate full-stack developer with a deep love for building scalable, beautiful websites and web applications. My journey into tech started with a curiosity about how the web works and has since evolved into a full-fledged career.
 
 I specialize in <span className="text-cyan-500 font-semibold">Next.js</span>, <span className="text-cyan-500 font-semibold">Tailwind CSS</span>  , <span className="text-cyan-500 font-semibold">Sanity</span>, and <span className="text-cyan-500 font-semibold">TypeScript</span>. I believe in creating seamless, intuitive user experiences while leveraging cutting-edge technologies. Every line of code I write is a reflection of my commitment to delivering high-quality and efficient solutions. My mission is
                 </p>

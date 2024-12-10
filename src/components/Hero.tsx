@@ -13,9 +13,9 @@ export default function HeroSection() {
 
                 </h1>
                 <p className="dark:text-[#f2f2f4]  text-black mt-4 md:mt-6 text-xs sm:text-sm lg:text-base leading-relaxed text-justify md:text-left py-2">
-                Welcome to my personal blog, where technology meets creativity! I share my journey as a developer, my passion for building amazing websites, and insights into the rapidly evolving world of tech. Whether you're a developer, entrepreneur, or simply a tech enthusiast, this blog is designed to inform, inspire, and provide useful resources for everyone interested in the world of development.
-
-Here, you will find everything from <span className="dark:text-cyan-500 font-semibold text-cyan-600">web development</span> tips and <span className="dark:text-cyan-500 font-semibold text-cyan-600">AI trends</span> to <span className="dark:text-cyan-500 font-semibold text-cyan-600">career advice</span> and <span className="dark:text-cyan-500 font-semibold text-cyan-600">tech tutorials</span>. I am excited to share my knowledge with you and help you navigate the ever-changing landscape of the tech world.
+{`                Welcome to my personal blog, where technology meets creativity! I share my journey as a developer, my passion for building amazing websites, and insights into the rapidly evolving world of tech. Whether you're a developer, entrepreneur, or simply a tech enthusiast, this blog is designed to inform, inspire, and provide useful resources for everyone interested in the world of development.
+`}
+{`Here, you will find everything from `}<span className="dark:text-cyan-500 font-semibold text-cyan-600">web development</span> tips and <span className="dark:text-cyan-500 font-semibold text-cyan-600">AI trends</span> to <span className="dark:text-cyan-500 font-semibold text-cyan-600">career advice</span> and <span className="dark:text-cyan-500 font-semibold text-cyan-600">tech tutorials</span>. I am excited to share my knowledge with you and help you navigate the ever-changing landscape of the tech world.
                 </p>
                 <div className="flex flex-col flex-wrap items-center justify-center lg:flex-row gap-4 mt-4 md:mt-6">
                     <Button text="Get Started Now" bgColour="#06b6d4" textColour="black" />

@@ -23,7 +23,7 @@ const ContactPage = () => {
     <div className="max-w-screen-lg mx-auto px-4 py-12">
       <h1 className="text-4xl font-bold text-center mb-6 text-cyan-600">Contact Us</h1>
       <p className="text-center text-gray-600 dark:text-gray-400 mb-12">
-        We'd love to hear from you! Whether you have a question or need assistance, feel free to reach out.
+       {` We'd love to hear from you! Whether you have a question or need assistance, feel free to reach out.`}
       </p>
 
       <div className="grid md:grid-cols-2 gap-12">
@@ -94,7 +94,7 @@ const ContactPage = () => {
             <FaEnvelope className="text-cyan-600 text-3xl" />
             <div>
               <p className="font-semibold text-gray-700 dark:text-gray-400">Email</p>
-              <p className="text-gray-500">info@techtales.com</p>
+              <p className="text-gray-500">{`info@techtales.com`}</p>
             </div>
           </div>
 
@@ -102,7 +102,7 @@ const ContactPage = () => {
             <FaPhone className="text-cyan-600 text-3xl" />
             <div>
               <p className="font-semibold text-gray-700 dark:text-gray-400">Phone</p>
-              <p className="text-gray-500">+123 456 7890</p>
+              <p className="text-gray-500">{`+123 456 7890`}</p>
             </div>
           </div>
 
@@ -110,7 +110,7 @@ const ContactPage = () => {
             <FaMapMarkerAlt className="text-cyan-600 text-3xl" />
             <div>
               <p className="font-semibold text-gray-700 dark:text-gray-400">Location</p>
-              <p className="text-gray-500">123 TechTales Street, Tech City, TC 12345</p>
+              <p className="text-gray-500">{`123 TechTales Street, Tech City, TC 12345`}</p>
             </div>
           </div>
 
