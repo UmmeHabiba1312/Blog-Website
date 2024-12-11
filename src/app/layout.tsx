@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CommentsSection from "@/components/comment";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           >
              <Navbar/>
         <main className="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8">{children}</main>
+        <CommentsSection/>
         <Footer/>
         </ThemeProvider>
         </body>

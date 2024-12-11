@@ -42,7 +42,7 @@ const Blogs = () => {
   </CardHeader>
   <CardContent>
   <Button asChild className="w-full ">
-                <Link href='/blog/my-4th-website-blog' className="bg-blue-600 hover:bg-blue-400">Read More</Link>
+                <Link href='/blog/artificial-intelligence-revolutionizing-industries' className="bg-blue-600 hover:bg-blue-400">Read More</Link>
               </Button>
   </CardContent>
 </Card>
@@ -73,7 +73,7 @@ const Blogs = () => {
   </CardHeader>
   <CardContent>
   <Button asChild className="w-full ">
-                <Link href='/blog/my-3rd-blog' className="bg-blue-600 hover:bg-blue-400">Read More</Link>
+                <Link href='/blog/cloud-computing-transforming-the-future-of-it' className="bg-blue-600 hover:bg-blue-400">Read More</Link>
               </Button>
   </CardContent>
 </Card>
@@ -105,7 +105,7 @@ const Blogs = () => {
   </CardHeader>
   <CardContent>
   <Button asChild className="w-full ">
-                <Link href='/blog/my-2nd-blog' className="bg-blue-600 hover:bg-blue-400">Read More</Link>
+                <Link href='/blog/the-future-of-software-development-trends-and-predictions' className="bg-blue-600 hover:bg-blue-400">Read More</Link>
               </Button>
   </CardContent>
 </Card>
@@ -114,7 +114,7 @@ const Blogs = () => {
 
             <div className="flex justify-center">
             <Button asChild className="transition-all duration-300 hover:scale-105 mt-20 px-6 py-6 bg-cyan-600  dark:bg-cyan-500 font-bold text-lg ">
-                <Link href='/blog/my-4th-website-blog' className="bg-blue-600 hover:bg-blue-400">Read More</Link>
+                <Link href='/blogPage' className="bg-blue-600 hover:bg-blue-400">Read Blog</Link>
               </Button>
             </div>
     </main>

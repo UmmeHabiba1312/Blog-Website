@@ -68,46 +68,79 @@ const Navbar = () => {
       
                 {/* Mobile section */}
                 <div className="flex justify-center items-center gap-3">
-                <div className="relative md:hidden mt-1">
-                    <Sheet>
-                        <SheetTrigger className="dark:text-cyan-500 text-cyan-600">
-                            <FaBars size={24} className=""/>
-                        </SheetTrigger>
-                        <SheetContent side="right" className="bg-[#00000d] p-6 shadow-lg">
-                            <SheetHeader>
-                                <SheetTitle className="text-lg font-semibold dark:text-cyan-500 text-cyan-600">
-                                    <div className="flex justify-center gap-2 items-center pt-8 pb-2">
-                                        <Image src="/logo.png" alt="logo" width={50} height={50} />
-                                        <span className="text-white uppercase">TechTales</span>
-                                    </div>
-                                </SheetTitle>
-                            </SheetHeader>
-                            <ul className="flex flex-col justify-center items-center space-y-4 py-4">
-                                {["Home", "About", "Contact", "Blog"].map((item) => {
-                                    // Generate the path for each link
-                                    const path = item === "Home" ? "/" : `/${item.toLowerCase()}`;
+    <div className="relative md:hidden mt-1">
+        <Sheet>
+            <SheetTrigger className="dark:text-cyan-500 text-cyan-600">
+                <FaBars size={24} className="" />
+            </SheetTrigger>
+            <SheetContent side="right" className="bg-[#00000d] p-6 shadow-lg">
+                <SheetHeader>
+                    <SheetTitle className="text-lg font-semibold dark:text-cyan-500 text-cyan-600">
+                        <div className="flex justify-center gap-2 items-center pt-8 pb-2">
+                            <Image src="/logo.png" alt="logo" width={50} height={50} />
+                            <span className="text-white uppercase">TechTales</span>
+                        </div>
+                    </SheetTitle>
+                </SheetHeader>
+                <ul className="flex flex-col justify-center items-center space-y-4 py-4">
+                    {/* Home Link */}
+                    <li>
+                        <Link
+                            href="/"
+                            className={`text-lg transition-colors ${pathname === "/"
+                                ? "dark:text-cyan-500 text-cyan-600 underline hover:text-cyan-500"
+                                : "text-[#f2f2f4] dark:hover:text-cyan-500 hover:text-cyan-600"
+                                }`}
+                        >
+                            Home
+                        </Link>
+                    </li>
 
-                                    return (
-                                        <li key={item}>
-                                            <Link
-                                                href={path}
-                                                className={`text-lg transition-colors ${pathname === path
-                                                        ? "dark:text-cyan-500 text-cyan-600 underline hover:text-cyan-500"
-                                                        : "text-[#f2f2f4]  dark:hover:text-cyan-500 hover:text-cyan-600"
-                                                    }`}
-                                            >
-                                                {item}
-                                            </Link>
-                                        </li>
-                                    );
-                                })}
-                            </ul>
-                        </SheetContent>
-                    </Sheet>
-                </div>
+                    {/* About Link */}
+                    <li>
+                        <Link
+                            href="/about"
+                            className={`text-lg transition-colors ${pathname === "/about"
+                                ? "dark:text-cyan-500 text-cyan-600 underline hover:text-cyan-500"
+                                : "text-[#f2f2f4] dark:hover:text-cyan-500 hover:text-cyan-600"
+                                }`}
+                        >
+                            About
+                        </Link>
+                    </li>
 
-                <ModeToggle />
-                </div>
+                    {/* Contact Link */}
+                    <li>
+                        <Link
+                            href="/contact"
+                            className={`text-lg transition-colors ${pathname === "/contact"
+                                ? "dark:text-cyan-500 text-cyan-600 underline hover:text-cyan-500"
+                                : "text-[#f2f2f4] dark:hover:text-cyan-500 hover:text-cyan-600"
+                                }`}
+                        >
+                            Contact
+                        </Link>
+                    </li>
+
+                    {/* Blog Page Link */}
+                    <li>
+                        <Link
+                            href="/blogPage"
+                            className={`text-lg transition-colors ${pathname === "/blogPage"
+                                ? "dark:text-cyan-500 text-cyan-600 underline hover:text-cyan-500"
+                                : "text-[#f2f2f4] dark:hover:text-cyan-500 hover:text-cyan-600"
+                                }`}
+                        >
+                            Blog
+                        </Link>
+                    </li>
+                </ul>
+            </SheetContent>
+        </Sheet>
+    </div>
+
+    <ModeToggle />
+</div>
     </nav>
   )
 }

@@ -20,7 +20,7 @@ export default function AboutSec() {
                             width={400}
                             height={450}
                             alt="hero3"
-                            className="z-10 w-[240px] object-cover rounded-lg  sm:w-[350px] lg:w-[570px] h-[300px] sm:h-[380px] lg:h-[450px] flex  md:h-[350px]"
+                            className="z-10 w-auto object-cover rounded-lg   h-[300px] sm:h-[380px] lg:h-[450px] flex  md:h-[350px]"
                         />
                     </div>
 

@@ -8,14 +8,14 @@ import Image from 'next/image'
 const Footer = () => {
   return (
     <main className="max-w-screen-2xl mx-auto">
-    <div className="mt-[60px] ">
+    <div className="sm:mt-[60px] mt-0  h-auto">
      
       {/* <hr className="mt-8 border-gray-700" /> */}
   
       {/* Second Section */}
       <div className="flex flex-col lg:flex-row justify-between px-4 md:px-6 lg:px-8 py-8">
         {/* Company Info */}
-        <div className="grid  mt-80 md:mt-48 lg:mt-0 grid-cols-3 gap-8 w-full lg:w-[70%]">
+        <div className="grid  mt-10 md:mt-48 lg:mt-0 grid-cols-3 gap-8 w-full lg:w-[70%]">
           <div>
           <Link href="/" className="font-bold dark:text-cyan-500 text-cyan-600 tracking-wide text-xl uppercase flex justify-start items-center gap-1">
         <Image
@@ -30,14 +30,14 @@ const Footer = () => {
             At TechTrans, we are dedicated to delivering innovative technology solutions tailored to meet the unique needs of businesses like yours.
             </p>
           </div>
-          <div className='mt-2'>
+          <div className='sm:mt-2 mt-[44px]'>
             <p className="dark:text-cyan-500 text-cyan-600 font-extrabold"> We Offer</p>
             <p className="mt-2 dark:hover:text-cyan-500">Cloud Computing Solution</p>
             <p className="mt-2 dark:hover:text-cyan-500">Cybersecurity & Compliance</p>
             <p className="mt-2 dark:hover:text-cyan-500">Software Development</p>
             <p className="mt-2 dark:hover:text-cyan-500">IT Consulting & Support</p>
           </div>
-          <div className='mt-2'>
+          <div className='sm:mt-2 mt-[44px]'>
             <p className="dark:text-cyan-500 text-cyan-600 font-extrabold">Usefull Links</p>
             <p className="mt-2   hover:text-cyan-500"><Link href='/'>Home</Link></p>
             <p className="mt-2   hover:text-cyan-500"><Link href='/about'>About</Link></p>

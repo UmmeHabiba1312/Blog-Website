@@ -44,7 +44,7 @@ export default function Team() {
         <h5 className="text-lg lg:text-3xl font-semibold text-cyan-600 dark:text-cyan-500 text-center md:text-left flex gap-1 justify-center items-center">
           <Image src="/logo.png" alt="logo" width="40" height="40" className="object-cover" /> My Team
         </h5>
-        <h2 className="text-2xl text-center sm:text-3xl md:text-2xl lg:text-4xl font-bold text-[#f2f2f4] mt-4 mx-auto max-w-screen-2xl">
+        <h2 className="text-2xl text-center sm:text-3xl md:text-2xl lg:text-4xl font-bold dark:text-[#f2f2f4] text-black mt-4 mx-auto max-w-screen-2xl">
           Meet With My Expert Team
         </h2>
   

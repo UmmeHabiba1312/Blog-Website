@@ -14,7 +14,7 @@ const query = `*[_type == "blog"] | order(_createdAt desc){
 }`;
 
 const data = await client.fetch(query);
-
+console.log(data);
 return data;
 }
 
@@ -22,9 +22,8 @@ return data;
 
 export default async function BlogPage() {
   const data:simpleBlogCard[] = await getData();
-  console.log(data);
   return (
-    <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-[40px]">
           {data.map((post,idx) =>(
            <Card key={idx}>
             <Image

@@ -17,6 +17,7 @@ import HeroSection from "@/components/Hero";
 import AboutSec from "@/components/about";
 import Blogs from "@/components/blog";
 import ContactPage from "./contact/page";
+// import CommentsSection from "@/components/comment";
 
 // const data = await client.fetch(query);
 
@@ -55,12 +56,13 @@ export default async function Home() {
   //  )}
         
   //   </main>
-  <main>
+  <main className="max-w-screen-2xl mx-auto overflow-x-hidden">
 
     <HeroSection/>
     <AboutSec/>
     <Blogs/>
     <ContactPage/>
+   
 
   </main>
   );
