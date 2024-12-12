@@ -1,8 +1,12 @@
 import { fullBlog } from "@/lib/interface";
 import { client } from "@/sanity/lib/client";
-import { urlFor } from "@/sanity/lib/image";
+import { urlFor  } from "@/sanity/lib/image";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
+
+
+
+
 
 async function getData(slug: string){
     console.log("result",slug);
