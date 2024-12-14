@@ -1,40 +1,41 @@
-export default {
-    name:"blog",
-    type:'document',
+const blogSchema = {
+    name: "blog",
+    type: 'document',
     title: 'Blog',
-    fields:[
+    fields: [
         {
             name: 'title',
-            type:'string',
+            type: 'string',
             title: 'Title Of Blog'
         },
         {
-            name:'slug',
-            type:'slug',
+            name: 'slug',
+            type: 'slug',
             title: 'Slug Of Blog',
-            options:{
+            options: {
                 source: 'title',
                 maxLength: 100,
                 // slugify: input => input.toLowerCase().replace(/\s+/g, '-')
             }
-           
         },
         {
-            name:'titleImage',
-            type:'image',
+            name: 'titleImage',
+            type: 'image',
             title: 'Title Image',
         },
         {
-            name:'description',
-            type:'text',
+            name: 'description',
+            type: 'text',
             title: 'Description',
         },
         {
-            name:"content",
-            type:'array',
+            name: "content",
+            type: 'array',
             title: 'Content',
-            of:[{type:'block'}],
+            of: [{ type: 'block' }],
             // description: 'Write your blog content here.'
         }
     ]
-}
+};
+
+export default blogSchema;
