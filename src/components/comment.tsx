@@ -17,7 +17,7 @@ export default function CommentsSection() {
   };
 
   return (
-    <div className="max-w-md mx-auto p-4">
+    <div className="max-w-md mx-auto p-4 mt-[40px]">
       {/* Heading and Intro Paragraph */}
       <header className="mb-6">
         <h1 className="text-3xl font-bold text-center mb-2">Comments Section</h1>

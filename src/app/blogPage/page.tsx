@@ -23,7 +23,12 @@ return data;
 export default async function BlogPage() {
   const data:simpleBlogCard[] = await getData();
   return (
-    <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-[40px]">
+   <> 
+   <h2 className="flex font-bold md:justify-center mt-[40px] md:text-5xl sm:text-4xl text-3xl">Welcome to Our Blog</h2>
+   <p className="flex md:justify-center mt-4 mb-5 text-cyan-600 dark:text-cyan-500">Stay informed with the latest insights, trends, and updates in the world of technology and IT solutions.
+
+</p>
+   <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-[40px]">
           {data.map((post,idx) =>(
            <Card key={idx}>
             <Image
@@ -49,5 +54,6 @@ export default async function BlogPage() {
    )}
         
     </main>
+    </>
   );
 }
